@@ -13,7 +13,7 @@
 :root{--wine:#2a0b10;--wine2:#3b1118;--cream:#f4ead9;--paper:#eadbc4;--ink:#24191a;--gold:#b38a4b;--gold2:#d8bc87;--line:rgba(179,138,75,.34)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wine);color:var(--cream);font-family:"DM Sans",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;width:100%}::selection{background:var(--gold);color:var(--wine)}
 header{position:fixed;z-index:20;top:0;left:0;right:0;padding:18px 6vw;transition:.3s}header.scrolled{background:rgba(42,11,16,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{max-width:1400px;margin:auto;display:flex;justify-content:space-between;align-items:center}.brand{font:500 1.1rem "Cormorant Garamond",serif;letter-spacing:.2em;text-transform:uppercase}.links{display:flex;gap:30px;font-size:.67rem;letter-spacing:.18em;text-transform:uppercase}.links a{opacity:.82}.links a:hover{color:var(--gold2);opacity:1}.navbtn{border:1px solid var(--line);padding:11px 16px;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase}
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr}.hero-copy{display:flex;justify-content:center;flex-direction:column;padding:140px 7vw 80px}.kicker{font-size:.65rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);margin-bottom:24px}.hero h1{font:500 clamp(4.2rem,8vw,9rem)/.78 "Cormorant Garamond",serif;letter-spacing:-.05em;margin:0;max-width:750px}.hero h1 em,h2 em{font-weight:400}.hero p{max-width:520px;color:#d6c7b6;line-height:1.85;margin:35px 0}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;padding:15px 20px;border:1px solid var(--gold);font-size:.65rem;letter-spacing:.17em;text-transform:uppercase;transition:.25s}.btn.primary{background:var(--gold);color:var(--wine)}.btn:hover{transform:translateY(-2px);background:var(--gold2);color:var(--wine)}.hero-img{min-height:100vh;position:relative;overflow:hidden;background:#120507}.hero-img>img,.hero-img>video{height:100%;width:100%;object-fit:cover}.hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--wine),transparent 25%),linear-gradient(0deg,rgba(15,3,5,.35),transparent 50%)}.logo-card{position:absolute;z-index:2;right:7%;bottom:7%;width:155px;padding:9px;background:rgba(42,11,16,.4);border:1px solid var(--line);backdrop-filter:blur(8px)}
+.hero{min-height:100vh;position:relative;overflow:hidden;background:#120507}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(15,3,5,.75) 0%,rgba(15,3,5,.25) 45%,rgba(15,3,5,.65) 100%)}.hero-copy{position:relative;z-index:2;min-height:100vh;max-width:900px;display:flex;justify-content:center;flex-direction:column;padding:140px 7vw 80px}.kicker{font-size:.65rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);margin-bottom:24px}.hero h1{font:500 clamp(4.2rem,8vw,9rem)/.78 "Cormorant Garamond",serif;letter-spacing:-.05em;margin:0;max-width:750px}.hero h1 em,h2 em{font-weight:400}.hero p{max-width:520px;color:#d6c7b6;line-height:1.85;margin:35px 0}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;padding:15px 20px;border:1px solid var(--gold);font-size:.65rem;letter-spacing:.17em;text-transform:uppercase;transition:.25s}.btn.primary{background:var(--gold);color:var(--wine)}.btn:hover{transform:translateY(-2px);background:var(--gold2);color:var(--wine)}.logo-card{position:absolute;z-index:2;right:7%;bottom:7%;width:155px;padding:9px;background:rgba(42,11,16,.4);border:1px solid var(--line);backdrop-filter:blur(8px)}
 .hero-reveal{opacity:0;transform:translateY(24px);transition:.9s cubic-bezier(.16,.84,.44,1)}.hero-reveal.show{opacity:1;transform:none}
 section{padding:120px 7vw}.wrap{max-width:1380px;margin:auto}.intro{display:grid;grid-template-columns:.7fr 1.3fr;gap:10vw}.number{font-size:.65rem;letter-spacing:.25em;color:var(--gold);padding-top:10px}.intro h2,.section-head h2{font:500 clamp(3.5rem,6vw,7rem)/.86 "Cormorant Garamond",serif;letter-spacing:-.035em;margin:0}.copy{max-width:680px;color:#d8c9b8;line-height:1.9;font-size:1.03rem}.copy strong{font:500 1.45em "Cormorant Garamond",serif;color:var(--cream)}.quote{border-left:1px solid var(--gold);padding-left:22px;color:var(--gold2);font:400 2rem/1.1 "Cormorant Garamond",serif;margin-top:38px}.faq{display:grid;grid-template-columns:1fr 1fr;gap:24px 40px;margin-top:48px;border-top:1px solid var(--line);padding-top:38px}.faq-item b{display:block;font:500 1.2rem "Cormorant Garamond",serif;color:var(--cream);margin-bottom:8px}.faq-item p{margin:0;color:#c3b2a1;font-size:.88rem;line-height:1.7}
 .light{background:var(--cream);color:var(--ink)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:58px}.section-head p{max-width:430px;color:#6c5b50;line-height:1.8}.collection{display:grid;grid-template-columns:1.05fr .95fr;gap:7vw;align-items:center}.photo{position:relative;overflow:hidden}.photo img{height:690px;object-fit:cover;transition:.7s}.photo:hover img{transform:scale(1.035)}.tag{position:absolute;left:22px;bottom:22px;background:var(--wine);padding:12px 15px;color:var(--cream);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase}.collection h3{font:500 clamp(3.2rem,5.5vw,6rem)/.86 "Cormorant Garamond",serif;margin:15px 0 25px}.collection p{color:#6c5b50;line-height:1.9}.notes{display:flex;flex-wrap:wrap;gap:8px;margin:27px 0 35px}.note{border:1px solid rgba(42,11,16,.25);padding:9px 12px;font-size:.61rem;letter-spacing:.13em;text-transform:uppercase;color:#795f3c}
@@ -29,20 +29,71 @@ section{padding:120px 7vw}.wrap{max-width:1380px;margin:auto}.intro{display:grid
 .i-nav{display:flex;justify-content:space-between;align-items:center;margin-top:8px;gap:20px;flex-wrap:wrap}
 .contact .i-back{background:transparent;color:var(--wine);border-color:rgba(42,11,16,.3)}.contact .i-back:hover{border-color:var(--wine);background:transparent;transform:none}.i-back[data-hidden="1"]{visibility:hidden}footer{padding:35px 7vw;background:#19070a;border-top:1px solid var(--line)}.foot{max-width:1380px;margin:auto;display:flex;justify-content:space-between;gap:25px;align-items:center}.footlinks{display:flex;gap:20px;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#c8b7a7}.copyright{font-size:.58rem;color:#907f73;letter-spacing:.1em}
 .reveal{opacity:0;transform:translateY(20px);transition:.8s}.reveal.show{opacity:1;transform:none}
-@media(max-width:900px){.links,.navbtn{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding-top:145px;min-height:75vh}.hero-img{min-height:68vh}.hero-img:after{background:linear-gradient(0deg,var(--wine),transparent 32%)}.intro,.collection,.experience{grid-template-columns:1fr;gap:48px}.photo img{height:560px}.event-img img{height:580px;object-fit:contain}.editorial{grid-template-columns:1fr}.editorial .big{height:600px}.scent-grid{grid-template-columns:repeat(2,1fr)}.scent{border-bottom:1px solid rgba(42,11,16,.22)}.insta-grid{grid-template-columns:repeat(4,1fr);gap:8px}.foot{flex-direction:column;align-items:flex-start}.insta-head{display:block}.handles{margin-top:22px}.i-row,.i-row.two,.faq{grid-template-columns:1fr}}
-@media(max-width:520px){section{padding:85px 6vw}.hero h1{font-size:4.2rem}.hero p{font-size:.9rem}.actions .btn{width:100%;justify-content:center}.section-head{display:block}.section-head p{margin-top:25px}.photo img{height:480px}.editorial .big{height:500px}.scent-grid{grid-template-columns:1fr}.scent{border-right:0;min-height:145px}.insta-grid{grid-template-columns:repeat(2,1fr);gap:6px}.logo-card{width:120px}}
+.motion-band{position:relative;min-height:70vh;overflow:hidden;padding:0}.motion-band video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.motion-band:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(15,3,5,.8) 0%,rgba(15,3,5,.1) 45%,rgba(15,3,5,.5) 100%)}.motion-caption{position:relative;z-index:2;min-height:70vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 7vw 55px}.motion-caption h3{font:500 clamp(2.4rem,4.5vw,4rem)/1 "Cormorant Garamond",serif;margin:14px 0 0;color:var(--cream)}
+.setup-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:220px;grid-auto-flow:dense;gap:14px}.setup-item{position:relative;overflow:hidden}.setup-item img{height:100%;width:100%;object-fit:cover;transition:.6s}.setup-item:hover img{transform:scale(1.05)}.setup-item.tall{grid-row:span 2}.setup-tag{position:absolute;left:14px;bottom:14px;background:var(--wine);color:var(--cream);padding:9px 13px;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase}
+.quiz{max-width:640px;margin:0 auto}.quiz-step{display:none;text-align:center}.quiz-step.active{display:block;animation:stepin .35s ease}.quiz-q{font:500 1.7rem "Cormorant Garamond",serif;margin-bottom:22px;color:var(--ink)}.quiz-choice{justify-content:center}.quiz-progress{display:flex;justify-content:center;gap:8px;margin-bottom:36px}.quiz-progress .dot{width:7px;height:7px;border-radius:5px;background:rgba(42,11,16,.2);transition:.3s}.quiz-progress .dot.active{width:22px;background:var(--wine)}.quiz-progress .dot.done{background:rgba(42,11,16,.45)}.quiz-result{display:none;text-align:center}.quiz-result.show{display:block;animation:stepin .4s ease}#quizResultName{font:500 clamp(2.4rem,5vw,3.4rem)/1 "Cormorant Garamond",serif;margin:10px 0}#quizResultNotes{color:#6c5b50;max-width:480px;margin:0 auto}
+@media(max-width:900px){.links,.navbtn{display:none}.hero-copy{padding-top:145px}.intro,.collection,.experience{grid-template-columns:1fr;gap:48px}.photo img{height:560px}.event-img img{height:580px;object-fit:contain}.scent-grid{grid-template-columns:repeat(2,1fr)}.scent{border-bottom:1px solid rgba(42,11,16,.22)}.insta-grid{grid-template-columns:repeat(4,1fr);gap:8px}.foot{flex-direction:column;align-items:flex-start}.insta-head{display:block}.handles{margin-top:22px}.i-row,.i-row.two,.faq{grid-template-columns:1fr}.setup-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){section{padding:85px 6vw}.hero h1{font-size:4.2rem}.hero p{font-size:.9rem}.actions .btn{width:100%;justify-content:center}.section-head{display:block}.section-head p{margin-top:25px}.photo img{height:480px}.editorial .big{height:500px}.scent-grid{grid-template-columns:1fr}.scent{border-right:0;min-height:145px}.insta-grid{grid-template-columns:repeat(2,1fr);gap:6px}.logo-card{width:120px}.setup-grid{grid-template-columns:1fr;grid-auto-rows:260px}.setup-item.tall{grid-row:span 1}.quiz-q{font-size:1.4rem}}
 </style>
 </head>
 <body>
-<header id="header"><nav><a class="brand" href="#top">Heirloom Scents</a><div class="links"><a href="#about">About</a><a href="#collection">Collection</a><a href="#experience">Experience</a><a href="#instagram">Instagram</a></div><a class="navbtn" href="#contact">Inquire</a></nav></header>
+<header id="header"><nav><a class="brand" href="#top">Heirloom Scents</a><div class="links"><a href="#about">About</a><a href="#collection">Collection</a><a href="#setup">The Setup</a><a href="#quiz">Find Your Scent</a><a href="#instagram">Instagram</a></div><a class="navbtn" href="#contact">Inquire</a></nav></header>
 <main id="top">
-<section class="hero"><div class="hero-copy"><div class="kicker hero-reveal">Eau de Parfum · Heirloom Scents</div><h1 class="hero-reveal">Scents<br><em>worth</em><br>remembering.</h1><p class="hero-reveal">A fragrance experience designed to become part of the memory. Discover Heirloom Scents through intimate perfume, beautiful presentation, and moments made to linger.</p><div class="actions hero-reveal"><a class="btn primary" href="#collection">Explore the collection</a><a class="btn" href="#contact">Start an inquiry</a></div></div><div class="hero-img"><video id="heroVideo" autoplay muted playsinline><source src="assets/video/hero.mp4" type="video/mp4"></video><div class="logo-card"><img src="assets/images/hero-bottle.jpg" alt="Heirloom Scents logo"></div></div></section>
+<section class="hero"><video class="hero-video" id="heroVideo" autoplay muted playsinline><source src="assets/video/hero.mp4" type="video/mp4"></video><div class="hero-copy"><div class="kicker hero-reveal">Eau de Parfum · Heirloom Scents</div><h1 class="hero-reveal">Scents<br><em>worth</em><br>remembering.</h1><p class="hero-reveal">A fragrance experience designed to become part of the memory. Discover Heirloom Scents through intimate perfume, beautiful presentation, and moments made to linger.</p><div class="actions hero-reveal"><a class="btn primary" href="#collection">Explore the collection</a><a class="btn" href="#contact">Start an inquiry</a></div></div><div class="logo-card"><img src="assets/images/hero-bottle.jpg" alt="Heirloom Scents logo"></div></section>
 <section id="about"><div class="wrap intro"><div class="number reveal">01 / ABOUT</div><div><h2 class="reveal">A fragrance<br><em>with a story.</em></h2><div class="copy reveal"><p><strong>Heirloom Scents is more than perfume.</strong> It is the feeling attached to a room, an evening, a celebration, or someone you never want to forget.</p><p>Every detail is presented with intention, from the glass bottle and warm metallic finishes to the scent experience itself. The result is personal, elegant, and made to stay with you.</p><div class="quote">“Leave a little of the moment behind.”</div><div class="faq reveal"><div class="faq-item"><b>What services do you offer?</b><p>A hosted Perfume Bar experience (20 bottle minimum) where guests build their own scent, or Prepackaged Perfume Bottles as ready-made favors for any headcount.</p></div><div class="faq-item"><b>Can the bottles be customized?</b><p>Yes — custom stickers and labels are available so every bottle matches your event.</p></div><div class="faq-item"><b>What kinds of events do you cater to?</b><p>Weddings, birthdays, bridal showers, corporate events, popups, graduations, grand openings, and more.</p></div><div class="faq-item"><b>How do I book?</b><p>Send an inquiry with your event details below and our team will follow up with availability, pricing, and booking information.</p></div></div></div></div></div></section>
 <section class="light" id="collection"><div class="wrap"><div class="section-head"><div><div class="kicker" style="color:#8d7048">02 / THE COLLECTION</div><h2>Signature<br><em>scents.</em></h2></div><p>A rotating selection of distinctive fragrance profiles. Find the note that feels like you, then make it part of your story.</p></div><div class="collection"><div class="photo reveal"><img src="assets/images/bottles-collection.jpg" alt="Heirloom Scents perfume bottles arranged together"><div class="tag">The signature bottle</div></div><div class="reveal"><div class="kicker" style="color:#8d7048">Eau de Parfum</div><h3>Personal.<br><em>Memorable.</em></h3><p>From warm amber and vanilla to romantic florals and bright citrus, the Heirloom Scents collection is built around moods rather than trends.</p><div class="notes"><span class="note">Saffron Amber</span><span class="note">Golden Vanilla</span><span class="note">Velvet Rose</span><span class="note">Berry Cloud</span><span class="note">Fiery Petals</span><span class="note">Moonlight Vanilla</span><span class="note">Citrus Rose</span></div><a class="btn" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener">Discover on Instagram ↗</a></div></div></div></section>
+<section class="motion-band"><video autoplay muted loop playsinline src="assets/instagram/reel-1.mp4"></video><div class="motion-caption"><div class="kicker" style="color:var(--gold2)">IN MOTION</div><h3>See the bar<br><em>come to life.</em></h3></div></section>
 <section id="experience"><div class="wrap experience"><div><div class="kicker reveal">03 / THE EXPERIENCE</div><h2 class="reveal">Bring the<br><em>scent bar</em><br>to the moment.</h2><p class="reveal">The Heirloom Scents setup turns fragrance into an experience. Guests can explore a curated selection of scents in a styled presentation that feels as special as the occasion itself.</p><div class="rows reveal"><div class="row"><span>01</span><b>Private events</b><small>By inquiry</small></div><div class="row"><span>02</span><b>Scent experiences</b><small>Curated</small></div><div class="row"><span>03</span><b>Celebrations</b><small>Custom</small></div></div></div><div class="photo event-img reveal"><img src="assets/images/event-setup.jpg" alt="Heirloom Scents fragrance bar setup at an event"></div></div></section>
-<section class="light"><div class="wrap"><div class="section-head"><div><div class="kicker" style="color:#8d7048">04 / THE DETAILS</div><h2>Designed to<br><em>be noticed.</em></h2></div><p>The visual language of Heirloom Scents is warm, theatrical, and refined. Gold details, rich tones, glass, and fragrance come together as one experience.</p></div><div class="editorial"><div class="photo big reveal"><img src="assets/images/bottle-detail.jpg" alt="Close detail of Heirloom Scents fragrance bottles"><div class="caption">The art of the bottle.</div></div><div class="editorial-right"><div class="photo small reveal"><img src="assets/images/fragrance-bar.jpg" alt="Heirloom Scents fragrance bar presentation" style="object-position:top"><div class="caption">A signature presentation.</div></div><div class="photo small reveal"><img src="assets/images/hero-bottle.jpg" alt="Heirloom Scents brand mark"><div class="caption">A name to remember.</div></div></div></div></div></section>
+<section class="light" id="setup"><div class="wrap"><div class="section-head"><div><div class="kicker" style="color:#8d7048">THE SETUP</div><h2>Styled for<br><em>every room.</em></h2></div><p>A look at the cart, the pour, and the small details that make each setup feel considered.</p></div><div class="setup-grid">
+<div class="setup-item tall"><img src="assets/images/fragrance-bar.jpg" alt="Heirloom Scents fragrance bar cart"><div class="setup-tag">The Perfume Bar</div></div>
+<div class="setup-item"><img src="assets/images/bottle-detail.jpg" alt="Pouring a custom scent at the fragrance bar"><div class="setup-tag">The Pour</div></div>
+<div class="setup-item"><img src="assets/images/cocktail-menu.jpg" alt="Heirloom Scents styled cocktail menu"><div class="setup-tag">Cocktail Pairing</div></div>
+<div class="setup-item"><img src="assets/images/bottle-lineup-1.jpg" alt="Heirloom Scents bottles styled on a display"><div class="setup-tag">Styled Bottles</div></div>
+<div class="setup-item tall"><img src="assets/images/event-setup.jpg" alt="Heirloom Scents tiered display stand"><div class="setup-tag">The Tiered Display</div></div>
+</div></div></section>
 <section class="light" style="padding-top:0"><div class="wrap"><div class="section-head" style="margin-bottom:35px"><div><div class="kicker" style="color:#8d7048">SCENT NOTES</div><h2>Find your<br><em>signature.</em></h2></div></div><div class="scent-grid"><div class="scent"><small>01</small><h3>Saffron<br>Amber</h3><p>Warm · Spiced · Rich</p></div><div class="scent"><small>02</small><h3>Golden<br>Vanilla</h3><p>Soft · Sweet · Warm</p></div><div class="scent"><small>03</small><h3>Velvet<br>Rose</h3><p>Floral · Deep · Romantic</p></div><div class="scent"><small>04</small><h3>Berry<br>Cloud</h3><p>Fruity · Soft · Playful</p></div><div class="scent"><small>05</small><h3>Fiery<br>Petals</h3><p>Bold · Floral · Warm</p></div><div class="scent"><small>06</small><h3>Moonlight<br>Vanilla</h3><p>Dreamy · Creamy · Smooth</p></div><div class="scent"><small>07</small><h3>Citrus<br>Rose</h3><p>Bright · Floral · Fresh</p></div></div></div></section>
-<section class="instagram" id="instagram"><div class="wrap"><div class="insta-head"><div><div class="kicker">05 / FOLLOW ALONG</div><h2>Inside the<br><em>house.</em></h2></div><div class="handles"><a class="handle" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener">Instagram ↗</a><a class="handle" href="https://www.tiktok.com/@heirloomscents" target="_blank" rel="noopener">TikTok ↗</a></div></div><div class="insta-grid">
+<section class="light" style="padding-top:0" id="quiz"><div class="wrap"><div class="section-head" style="margin-bottom:35px"><div><div class="kicker" style="color:#8d7048">FIND YOUR SCENT</div><h2>Build your<br><em>signature.</em></h2></div><p>Answer three quick questions and we'll match you to a scent from the collection.</p></div>
+<div class="quiz" id="scentQuiz">
+  <div class="quiz-progress" id="quizProgress"><span class="dot active" data-qdot="1"></span><span class="dot" data-qdot="2"></span><span class="dot" data-qdot="3"></span></div>
+  <div class="quiz-step active" data-qstep="1">
+    <div class="quiz-q">Pick a feeling</div>
+    <div class="choice-group quiz-choice" data-tag-group="1">
+      <button type="button" class="choice" data-tag="Warm">Warm</button>
+      <button type="button" class="choice" data-tag="Bright">Bright</button>
+      <button type="button" class="choice" data-tag="Floral">Floral</button>
+      <button type="button" class="choice" data-tag="Fruity">Fruity</button>
+    </div>
+  </div>
+  <div class="quiz-step" data-qstep="2">
+    <div class="quiz-q">Pick a texture</div>
+    <div class="choice-group quiz-choice" data-tag-group="2">
+      <button type="button" class="choice" data-tag="Rich">Rich</button>
+      <button type="button" class="choice" data-tag="Soft">Soft</button>
+      <button type="button" class="choice" data-tag="Creamy">Creamy</button>
+      <button type="button" class="choice" data-tag="Fresh">Fresh</button>
+    </div>
+  </div>
+  <div class="quiz-step" data-qstep="3">
+    <div class="quiz-q">Pick a personality</div>
+    <div class="choice-group quiz-choice" data-tag-group="3">
+      <button type="button" class="choice" data-tag="Romantic">Romantic</button>
+      <button type="button" class="choice" data-tag="Playful">Playful</button>
+      <button type="button" class="choice" data-tag="Bold">Bold</button>
+      <button type="button" class="choice" data-tag="Dreamy">Dreamy</button>
+    </div>
+  </div>
+  <div class="quiz-result" id="quizResult">
+    <div class="kicker" style="color:#8d7048">YOUR MATCH</div>
+    <h3 id="quizResultName">—</h3>
+    <p id="quizResultNotes"></p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;justify-content:center">
+      <a class="btn" href="#contact" style="background:var(--wine);color:var(--cream);border-color:var(--wine)">Start an inquiry</a>
+      <button type="button" class="btn i-back" id="quizRestart">Try again</button>
+    </div>
+  </div>
+</div>
+</div></section>
+<section class="instagram" id="instagram"><div class="wrap"><div class="insta-head"><div><div class="kicker">04 / FOLLOW ALONG</div><h2>Inside the<br><em>house.</em></h2></div><div class="handles"><a class="handle" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener">Instagram ↗</a><a class="handle" href="https://www.tiktok.com/@heirloomscents" target="_blank" rel="noopener">TikTok ↗</a></div></div><div class="insta-grid">
 <a class="insta" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener"><video src="assets/instagram/reel-1.mp4" autoplay muted loop playsinline></video><svg class="insta-play" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#f4ead9" stroke-width="1.3"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="#f4ead9"/></svg><div class="insta-tag"><span>Reel</span><span>View ↗</span></div></a>
 <a class="insta" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener"><video src="assets/instagram/reel-2.mp4" autoplay muted loop playsinline></video><svg class="insta-play" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#f4ead9" stroke-width="1.3"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="#f4ead9"/></svg><div class="insta-tag"><span>Reel</span><span>View ↗</span></div></a>
 <a class="insta" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener"><video src="assets/instagram/reel-3.mp4" autoplay muted loop playsinline></video><svg class="insta-play" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#f4ead9" stroke-width="1.3"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="#f4ead9"/></svg><div class="insta-tag"><span>Reel</span><span>View ↗</span></div></a>
@@ -52,7 +103,7 @@ section{padding:120px 7vw}.wrap{max-width:1380px;margin:auto}.intro{display:grid
 <a class="insta" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener"><video src="assets/instagram/reel-6.mp4" autoplay muted loop playsinline></video><svg class="insta-play" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#f4ead9" stroke-width="1.3"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="#f4ead9"/></svg><div class="insta-tag"><span>Reel</span><span>View ↗</span></div></a>
 <a class="insta" href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener"><video src="assets/instagram/reel-7.mp4" autoplay muted loop playsinline></video><svg class="insta-play" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#f4ead9" stroke-width="1.3"/><path d="M10 8.5v7l6-3.5-6-3.5Z" fill="#f4ead9"/></svg><div class="insta-tag"><span>Reel</span><span>View ↗</span></div></a>
 </div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="kicker" style="color:#8d7048">06 / BEGIN</div><h2 class="reveal">Make it<br><em>an heirloom.</em></h2><p class="reveal">Tell us about your event and our team will follow up with availability, pricing, and booking information.</p>
+<section class="contact" id="contact"><div class="wrap"><div class="kicker" style="color:#8d7048">05 / BEGIN</div><h2 class="reveal">Make it<br><em>an heirloom.</em></h2><p class="reveal">Tell us about your event and our team will follow up with availability, pricing, and booking information.</p>
 
 <form class="inquiry-form" id="inquiryForm" novalidate>
   <div class="i-steps" id="inquirySteps">
@@ -151,6 +202,60 @@ section{padding:120px 7vw}.wrap{max-width:1380px;margin:auto}.intro{display:grid
 </main>
 <footer><div class="foot"><div class="brand">Heirloom Scents</div><div class="footlinks"><a href="#about">About</a><a href="#collection">Collection</a><a href="#experience">Experience</a><a href="https://www.instagram.com/heirloomscents/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@heirloomscents" target="_blank" rel="noopener">TikTok</a></div><div class="copyright">© <span id="year"></span> Heirloom Scents</div></div></footer>
 <script>const h=document.getElementById('header');addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>20));const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>o.observe(x));document.getElementById('year').textContent=new Date().getFullYear();
+
+const scentTags={
+  'Saffron Amber':['Warm','Spiced','Rich'],
+  'Golden Vanilla':['Soft','Sweet','Warm'],
+  'Velvet Rose':['Floral','Deep','Romantic'],
+  'Berry Cloud':['Fruity','Soft','Playful'],
+  'Fiery Petals':['Bold','Floral','Warm'],
+  'Moonlight Vanilla':['Dreamy','Creamy','Smooth'],
+  'Citrus Rose':['Bright','Floral','Fresh']
+};
+const scentOrder=Object.keys(scentTags);
+let quizAnswers={};
+function setQuizStep(step){
+  document.querySelectorAll('.quiz-step').forEach(s=>s.classList.toggle('active',+s.dataset.qstep===step));
+  document.querySelectorAll('#quizProgress .dot').forEach(d=>{
+    const dn=+d.dataset.qdot;
+    d.classList.toggle('active',dn===step);
+    d.classList.toggle('done',dn<step);
+  });
+}
+function finishQuiz(){
+  const tags=Object.values(quizAnswers);
+  let best=scentOrder[0],bestScore=-1;
+  scentOrder.forEach(s=>{
+    const score=scentTags[s].filter(t=>tags.includes(t)).length;
+    if(score>bestScore){bestScore=score;best=s;}
+  });
+  document.querySelectorAll('.quiz-step').forEach(s=>s.classList.remove('active'));
+  document.getElementById('quizProgress').style.display='none';
+  document.getElementById('quizResultName').textContent=best;
+  document.getElementById('quizResultNotes').textContent=scentTags[best].join(' · ');
+  document.getElementById('quizResult').classList.add('show');
+}
+document.querySelectorAll('.quiz-choice').forEach(g=>{
+  g.addEventListener('click',e=>{
+    const btn=e.target.closest('.choice');if(!btn)return;
+    g.querySelectorAll('.choice').forEach(b=>b.classList.remove('selected'));
+    btn.classList.add('selected');
+    const step=+g.dataset.tagGroup;
+    quizAnswers[step]=btn.dataset.tag;
+    setTimeout(()=>{
+      if(step<3)setQuizStep(step+1);
+      else finishQuiz();
+    },300);
+  });
+});
+const quizRestartBtn=document.getElementById('quizRestart');
+if(quizRestartBtn)quizRestartBtn.addEventListener('click',()=>{
+  quizAnswers={};
+  document.querySelectorAll('.quiz-choice .choice').forEach(b=>b.classList.remove('selected'));
+  document.getElementById('quizResult').classList.remove('show');
+  document.getElementById('quizProgress').style.display='flex';
+  setQuizStep(1);
+});
 
 let heroRevealed=false;
 function revealHero(){
